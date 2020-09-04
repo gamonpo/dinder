@@ -7,11 +7,11 @@ import Login from './pages/Login';
 const {Navigator, Screen} = createStackNavigator();
 
 export default function Routes() {
-  return (
-    <NavigationContainer>
-      <Navigator screenOptions={{headerShown: false}}>
-        <Screen name="Login" component={Login} />
-      </Navigator>
-    </NavigationContainer>
-  );
+    return (
+        <NavigationContainer>
+            <Navigator screenOptions={{headerShown: false}}>
+                <Screen name="Login" component={Login} />
+            </Navigator>
+        </NavigationContainer>
+    );
 }

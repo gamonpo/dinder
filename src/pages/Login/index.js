@@ -1,20 +1,40 @@
 import React from 'react';
 
-import {Background, Form, Email, Password} from './styles';
+import {Alert} from 'react-native';
+
+import {Background, Form, Input, Iconn, Email, Button, BTitle} from './styles';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 import back from '../../assets/food.png';
 
 export default function Login() {
-  return (
-    <Background source={back}>
-      {/* <Form>
-        <Email />
-        <Password />
-      </Form> */}
+    return (
+        <Background source={back}>
+            <Form>
+                <Input>
+                    <Iconn>
+                        <Icon name="user" size={20} color="#eee" />
+                    </Iconn>
 
-      <Icon name="rocket" size={190} color="#900" />
-    </Background>
-  );
+                    <Email placeholder="Email" placeholderTextColor="#ffffff" />
+                </Input>
+
+                <Input>
+                    <Iconn>
+                        <Icon name="lock" size={20} color="#eee" />
+                    </Iconn>
+
+                    <Email
+                        placeholder="Password"
+                        placeholderTextColor="#ffffff"
+                    />
+                </Input>
+
+                <Button onPress={() => Alert.alert('Welcome!')}>
+                    <BTitle>Entre</BTitle>
+                </Button>
+            </Form>
+        </Background>
+    );
 }
