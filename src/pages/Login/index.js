@@ -8,7 +8,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 import back from '../../assets/food.png';
 
-export default function Login() {
+export default function Login({ navigation }) {
     return (
         <Background source={back}>
             <Form>
@@ -31,8 +31,8 @@ export default function Login() {
                     />
                 </Input>
 
-                <Button onPress={() => Alert.alert('Welcome!')}>
-                    <BTitle>Entre</BTitle>
+                <Button onPress={() => navigation.navigate('Match')}>
+                    <BTitle>Enter</BTitle>
                 </Button>
             </Form>
         </Background>
