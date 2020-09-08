@@ -1,14 +1,12 @@
 import React from 'react';
 
-import {Alert} from 'react-native';
-
 import {Background, Form, Input, Iconn, Email, Button, BTitle} from './styles';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-import back from '../../assets/food.png';
+import back from '../../assets/pictures/food.png';
 
-export default function Login({ navigation }) {
+export default function Login({navigation}) {
     return (
         <Background source={back}>
             <Form>
@@ -31,7 +29,7 @@ export default function Login({ navigation }) {
                     />
                 </Input>
 
-                <Button onPress={() => navigation.navigate('Match')}>
+                <Button onPress={() => navigation.navigate('Menu')}>
                     <BTitle>Enter</BTitle>
                 </Button>
             </Form>

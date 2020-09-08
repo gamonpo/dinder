@@ -1,11 +1,14 @@
 import styled from 'styled-components/native';
+import {Platform, StatusBar} from 'react-native';
+
+const statusBarHeight = Platform.OS === 'android' ? StatusBar.currentHeight : 0;
 
 export const Background = styled.ImageBackground`
     flex: 1;
-    justify-content: center;
 `;
 
 export const List = styled.View`
+    padding-top: ${statusBarHeight + 'px'};
     flex-direction: column;
     align-items: center;
 `;

@@ -3,10 +3,10 @@ import {Alert} from 'react-native';
 
 import {Background, List, Item, Photo, Title} from './styles';
 
-import background from '../../assets/background.png';
-import vegetables from '../../assets/vegetables.png';
-import bread from '../../assets/bread.png';
-import fruits from '../../assets/fruits.png';
+import background from '../../assets/pictures/background.png';
+import vegetables from '../../assets/pictures/vegetables.png';
+import bread from '../../assets/pictures/bread.png';
+import fruits from '../../assets/pictures/fruits.png';
 
 export default function Match() {
     return (
