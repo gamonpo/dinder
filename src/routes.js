@@ -9,6 +9,7 @@ import Login from './pages/Login';
 import Home from './pages/Home';
 import Match from './pages/Match';
 import Profile from './pages/Profile';
+import Food from './pages/Food';
 
 function Menu() {
     const {Navigator, Screen} = createBottomTabNavigator();
@@ -68,6 +69,7 @@ export default function Routes() {
             <Navigator screenOptions={{headerShown: false}}>
                 <Screen name="Login" component={Login} />
                 <Screen name="Menu" component={Menu} />
+                <Screen name="Food" component={Food} />
             </Navigator>
         </NavigationContainer>
     );
