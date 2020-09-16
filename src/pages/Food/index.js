@@ -16,7 +16,7 @@ export default function Food({route, navigation}) {
                 <Header>Food</Header>
             </Head>
             <Info>
-                <Image source={image} />
+                <Image source={{uri: image}} />
 
                 <Title>{name}</Title>
             </Info>
